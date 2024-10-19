@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Primera pagina</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/EjemplosPaginas/Pagina1/Imgs/ci.webp" alt="Logo de la página">
+        </div>
+    </header>
+    <main>
+        <div class="inicio">
+            <div class="blurred-background"></div>
+            <h1>Construimos Para Ti Un <span>Embudo de Ventas</span> en <span>YouTube</span> Que Te Hará Obtener 10-20+
+                Llamadas Calificadas Cada Mes <span>(O No Pagas)</span></h1>
+            <p><strong>SIN</strong> anuncios pagos, correos electrónicos fríos o videos aburridos.</p>
+            <a href="#video" class="btn-scroll">Ver Video</a>
+        </div>
+        <div class="video-section" id="video">
+            <div class="video-text">
+                <h2>Descubre cómo optimizar tus estrategias de ventas</h2>
+                <p>Nuestro método probado en YouTube te ayudará a obtener clientes potenciales calificados cada mes, sin la necesidad de anuncios pagos o métodos tradicionales. Dale un vistazo al video para conocer más detalles.</p>
+                <a href="#servicios" class="btn-scroll">Ver Servicios</a>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/cued2gqGNAc?si=HlDRbqMlnamLtvpf" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>        
+        <div class="servicios" id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios-grid">
+                <div class="servicio-item">
+                    <img src="ruta/del/servicio1.jpg" alt="Copiloto IA">
+                    <h3>Copiloto IA</h3>
+                    <p>El equipo de marketing con IA más avanzado del planeta. Todo lo que necesitas para potenciar tu marketing con más de 10,000 prompts para ChatGPT probados y comprobados.</p>
+                    <a href="#" class="btn-acceder">Quiero Acceder</a>
+                </div>
+                <div class="servicio-item">
+                    <img src="ruta/del/servicio2.jpg" alt="Socios Basic">
+                    <h3>Socios Basic</h3>
+                    <p>Te enseño la habilidad que me permitió ser un Socio de Contenido. Acceso al curso VIP de Socios de Contenido, comunidad exclusiva y clases semanales.</p>
+                    <a href="#" class="btn-acceder">Quiero Acceder</a>
+                </div>
+                <div class="servicio-item">
+                    <img src="ruta/del/servicio3.jpg" alt="Socios VIP">
+                    <h3>Socios VIP</h3>
+                    <p>Te ayuda a conseguir tus primeros clientes y a ganar $15,000 dólares como Socio de Contenido. Incluye sesiones individuales y seguimiento personalizado.</p>
+                    <a href="#" class="btn-acceder">Quiero Acceder</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contacto">
+
+        </div>
+    </main>
+    <script>
+        document.querySelector('.btn-scroll').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector('#video').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+
+</html>

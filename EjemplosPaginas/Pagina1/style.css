@@ -1,0 +1,243 @@
+*{
+    background-color: black;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1b1b1b;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    background-color: transparent;
+}
+
+.logo img {
+    background-color: transparent;
+    height: 80px;
+    width: auto;
+    display: block;
+}
+
+nav {
+    background-color: #1b1b1b; /* Fondo oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #a8ff9b; /* Verde claro */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: transparent; /* Asegura que no haya fondo */
+    text-shadow: none; /* Elimina cualquier sombra */
+    -webkit-font-smoothing: antialiased; /* Suaviza el texto en navegadores Webkit */
+    -moz-osx-font-smoothing: grayscale; /* Suaviza el texto en Firefox */
+}
+
+nav a:hover {
+    color: #ffffff; /* Cambia a blanco al pasar el mouse */
+}
+
+.inicio {
+    margin-bottom: 1%;
+    background-color: #1b1b1b;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: calc(90vh - 60px); /* Resta el espacio del nav para ajustar el contenido */
+}
+
+
+
+.inicio h1, .inicio p {
+    width: 70%;
+    background-color: transparent; /* Asegura que el fondo del texto sea transparente */
+    text-shadow: none; /* Elimina cualquier sombra */
+    margin: 0 auto;
+}
+
+.inicio h1 {
+    font-size: 2em; /* Ajusta el tamaño del título */
+    margin-bottom: 10px;
+}
+
+.inicio h1 span {
+    color: #a8ff9b; /* Verde para resaltar */
+    font-weight: bold;
+    background-color: transparent; /* Sin fondo en los elementos span */
+}
+
+
+.inicio p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.inicio p strong {
+    color: #a8ff9b;
+    font-weight: bold;
+    background-color: transparent; /* Asegura que el fondo de "SIN" sea transparente */
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    width: 80%;
+    margin: 0 auto;
+    background: #000;
+}
+
+.video iframe {
+    margin-top: 4%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    border: none;
+}
+
+.btn-scroll {
+    display: inline-block;
+    background-color: #a8ff9b; /* Color verde */
+    color: #1b1b1b; /* Texto en color oscuro */
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-scroll:hover {
+    background-color: #88d77b; /* Un verde más oscuro al pasar el mouse */
+}
+
+.video-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.video-text {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.video-text h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #a8ff9b;
+}
+
+.video-text p {
+    font-size: 1em;
+    color: #dddddd;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/*.video-text h2, .video-text p{
+    width: 40%;
+}
+*/
+.video-container {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 400px; /* Ajusta la altura para un aspecto más rectangular */
+    border: none;
+}
+
+.servicios {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.servicios h2 {
+    background-color: transparent;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #a8ff9b;
+}
+
+.servicios-grid {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.servicio-item {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    max-width: 350px;
+    text-align: left;
+    padding: 20px;
+    flex: 1;
+    margin: 10px;
+}
+
+.servicio-item img {
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.servicio-item h3 {
+    background-color: transparent;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.servicio-item p {
+    background-color: transparent;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    color: #dddddd;
+    line-height: 1.6;
+}
+
+.btn-acceder {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-acceder:hover {
+    background-color: #0056cc;
+}
+
